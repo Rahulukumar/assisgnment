@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="container">
+    <form method="post">
+        <p>Provide date as "yy-mm-dd" </p>
+        <p>Start date is Your loan date</p>
+        <p>End date is your release date</p>
+        {{ form.as_p }}
+        {% csrf_token %}
+        <input type="submit" value="Submit">
+    </form>
+</div>
+</body>
+</html>
